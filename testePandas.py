@@ -26,7 +26,7 @@ print(data_frame_carros)
 print()
 
 # Alterando a primeira coluna com o count
-primeiras_linhas = [3, 2, 1, 0]
+primeiras_linhas = ['BRA','JAM', 'HOL', 'ALE']
 data_frame_carros.index = primeiras_linhas
 print("Index Alterado")
 print(data_frame_carros)
@@ -34,3 +34,9 @@ print()
 
 data_frame_carros.columns = ['Pais', 'Renda_Pais', 'Lado_volante']
 print(data_frame_carros)
+print()
+
+# Selecionando elementos em um df com loc e iLoc
+print(data_frame_carros.loc[['BRA'], ['Renda_Pais', 'Lado_volante']])
+print()
+print(data_frame_carros.iloc[[0]])

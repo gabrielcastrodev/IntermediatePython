@@ -34,3 +34,5 @@ dicionario2['polonia'] = lista_add # adicionando as subcategorias e criando a ca
 
 
 print(dicionario2['polonia'])
+print()
+
